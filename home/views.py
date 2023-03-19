@@ -52,8 +52,7 @@ def new_search(request):
     antonyms = ''
     antonyms2 = ''
     try:
-        search = request.POST.get('search')
-        models.Search.objects.create(search=search)
+        search = request.POST.get('search') 
         res = requests.get(base_url.format(search))
         soup = bs4.BeautifulSoup(res.text, features='html.parser')
         meaning = soup.findAll('span', {'one-click-content css-nnyc96 e1q3nk1v1'})
