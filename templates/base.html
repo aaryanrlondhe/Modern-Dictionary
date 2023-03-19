@@ -459,8 +459,8 @@
 <nav id="nav">
     <div class="nav-wrapper">
         <div class="container">
-            <a href="/" class="brand-logo" id="logo">Modern Dictionary</a>
-            <a href="/" class="sidenav-trigger" data-target="mobile-nav">
+            <a href="#home" class="brand-logo" id="logo">Modern Dictionary</a>
+            <a href="#menu" class="sidenav-trigger" data-target="mobile-nav">
                 <i class="material-icons" id="menu">menu</i>
             </a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -473,10 +473,10 @@
     </div>
 </nav>
 <ul class="sidenav" id="mobile-nav">
-    <li><a href="/" id="games">Home</a></li>
+    <li><a href="#home" id="home">Home</a></li>
     <li><a href="{% url 'games' %}" id="games">Games</a></li>
-    <li><a href="{% url 'download' %}" id="games">Download</a></li>
-    <li><a href="{% url 'blogs' %}" id="games">Blogs</a></li>
+    <li><a href="{% url 'download' %}" id="download">Download</a></li>
+    <li><a href="{% url 'blogs' %}" id="blogs">Blogs</a></li>
 </ul>
 
 {% block word %}
