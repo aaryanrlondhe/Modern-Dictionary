@@ -890,6 +890,10 @@
             window.open("{% url 'download' %}", "_self");
             return "Check Your Browser Tabs";
         }
+        else if (input == "home" || input == "Home" || input == "HOME") {
+            window.open("{% url 'base' %}", "_self");
+            return "Check Your Browser Tabs";
+        }
         else {
             return "Try asking something else!";
         }
