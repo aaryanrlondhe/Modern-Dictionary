@@ -70,7 +70,7 @@ def new_search(request):
         soup1 = bs4.BeautifulSoup(res1.text, features='html.parser')
         synonyms1 = soup1.find_all('a', {'class': 'Cil3vPqnHSU3LLCTZ62n Ip2xyQSEjrh_jZExawdC fQdXDP6Pfndr85gESLI_'})
         synonymslist = set()
-        for i in synonyms1[0:10]:
+        for i in synonyms1[0:5]:
             if str(i.text) == '':
                 synonyms = 'There are no synonyms for this word.'
                 break
@@ -81,7 +81,7 @@ def new_search(request):
 
         antonyms1 = soup1.find_all('a', {'data-linkid':'psd2ic'})
         antonymslist = set()
-        for i in antonyms1[0:10]:
+        for i in antonyms1[0:5]:
             if i.text == '':
                 antonyms = 'There are no antonyms for this word.'
                 break
