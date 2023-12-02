@@ -76,7 +76,7 @@ def new_search(request):
                 break
             c_word = str(i.text)
             synonymslist.add(c_word.capitalize())
-        synonyms = ','.join(synonymslist)
+        synonyms = ' ,'.join(synonymslist)
         synonyms2 = ';'.join(synonymslist)
 
         antonyms1 = soup1.find_all('a', {'data-linkid':'psd2ic'})
