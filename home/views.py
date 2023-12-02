@@ -88,7 +88,7 @@ def new_search(request):
             c_word = str(i.text)
             antonymslist.add(c_word.capitalize())
         antonyms2 = ';'.join(antonymslist)
-        antonyms = ','.join(antonymslist)
+        antonyms = ' ,'.join(antonymslist)
 
     except IndexError:
         data_for_search = {
