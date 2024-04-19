@@ -55,7 +55,7 @@ def new_search(request):
         search = request.POST.get('search') 
         res = requests.get(base_url.format(search))
         soup = bs4.BeautifulSoup(res.text, features='html.parser')
-        meaning = soup.findAll('div', {'NZKOFkdkcvYgD3lqOIJw'})
+        meaning = soup.findAll('div', {'class':'NZKOFkdkcvYgD3lqOIJw'})
         meaning1 = str(meaning[0].text).strip()
         if ':' in meaning1:
             index = meaning1.find(':')
@@ -79,7 +79,7 @@ def new_search(request):
         synonyms = ' ,'.join(synonymslist)
         synonyms2 = ';'.join(synonymslist)
 
-        antonyms1 = soup1.find_all('a', {'data-linkid':'psd2ic'})
+        antonyms1 = soup1.find_all('a', {'class':'TSqnrw0qSMGseOGGBuxc'})
         antonymslist = set()
         for i in antonyms1[0:5]:
             if i.text == '':
