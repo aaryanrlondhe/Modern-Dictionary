@@ -62,7 +62,7 @@ def new_search(request):
             final_meaning = meaning1[0:index].capitalize()
         else:
             final_meaning = meaning1.strip().capitalize()
-        example = soup.findAll('span', {'luna-example italic'})
+        example = soup.findAll('div', {'dkA1ih27tI9o0MHLDxKt'})
         example1 = str(example[0].text)
         final_example = example1.strip().capitalize()
         title = search.capitalize()
