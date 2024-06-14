@@ -2,6 +2,9 @@
 
 Modern Dictionary is a professional platform dedicated to enriching students' dictionary skills and deepening their understanding of vocabulary. Our primary objectives include developing students' dictionary skills, raising awareness of the valuable information available in dictionaries, enhancing prediction skills for new vocabulary, fostering collaboration through group projects, promoting creativity with word games, and providing assistance with various language aspects like spelling, pronunciation, grammar, and word families.
 
+## URL
+https://moderndictionary.vercel.app/
+
 ## Features
 
 - **Accurate Word Information**: Provides precise meanings, synonyms, antonyms, and example sentences.
@@ -30,9 +33,7 @@ Modern Dictionary is a professional platform dedicated to enriching students' di
   - **Frontend**: HTML for structure, Materialize CSS for styling, and JavaScript for functionality.
   - **Database**: SQLite for efficient data management.
 
-## Methodology
 
-We employed the Scrum methodology for proper project execution. This agile approach allowed us to effectively manage tasks, prioritize features, and adapt to evolving requirements throughout the development process.
 
 ## Installation
 
@@ -40,3 +41,21 @@ We employed the Scrum methodology for proper project execution. This agile appro
    ```bash
    git clone https://github.com/yourusername/modern-dictionary.git
    cd modern-dictionary
+   '''
+   
+2. Set up a virtual environment:'
+   ```bash
+   python -m venv venv
+   Source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   ```
+   
+3. Install dependencies:
+    ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Run the Django server:
+   ```bash
+   python manage.py runserver
+   ```
+
