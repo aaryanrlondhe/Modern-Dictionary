@@ -3,7 +3,7 @@
 Modern Dictionary is a professional platform dedicated to enriching students' dictionary skills and deepening their understanding of vocabulary. Our primary objectives include developing students' dictionary skills, raising awareness of the valuable information available in dictionaries, enhancing prediction skills for new vocabulary, fostering collaboration through group projects, promoting creativity with word games, and providing assistance with various language aspects like spelling, pronunciation, grammar, and word families.
 
 ## URL
-moderndictionary.vercel.app
+[moderndictionary.vercel.app](https://moderndictionary.vercel.app/)
 
 ## Features
 
