@@ -79,7 +79,7 @@ def new_search(request):
         synonyms = ' ,'.join(synonymslist)
         synonyms2 = ';'.join(synonymslist)
 
-        antonyms1 = soup1.find_all('a', {'class':'TSqnrw0qSMGseOGGBuxc'})
+        antonyms1 = soup1.find_all('a', {'class':'TSqnrw0qSMGseOGGBux'})
         antonymslist = set()
         for i in antonyms1[0:5]:
             if i.text == '':
